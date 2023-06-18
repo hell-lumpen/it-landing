@@ -2,8 +2,8 @@
 .feedback-form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    font-family: 'Play', sans-serif;
+    padding-top: 20px;
+    font-family: Montserrat, sans-serif;
     font-size: 20px; /* Увеличение размера шрифта */
 }
 
@@ -16,7 +16,8 @@
 
 .contact-type-selector {
     margin-right: 10px;
-    font-family: inherit;
+    font-family: Montserrat, sans-serif;
+    color: black;
 }
 
 /* Form Input */
@@ -28,7 +29,8 @@
     border: 1px solid #1e1e1e;
     border-radius: 4px;
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: Montserrat, sans-serif;
+    color: black;
     font-size: 20px; /* Увеличение размера шрифта */
 }
 
@@ -42,6 +44,7 @@
     color: #f63b3b;
     font-size: 14px;
     text-align: center;
+    font-family: Montserrat, sans-serif;
 }
 
 /* Success Message */
@@ -54,7 +57,7 @@
 
 /* Submit Button */
 .feedback-form button[type='submit'] {
-    background-color: #0081ce;
+    background-color: #636583;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -66,11 +69,14 @@
     text-align: center;
     font-size: 24px;
     box-sizing: border-box;
-    font-family: inherit;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
 }
 
 .feedback-form button[type='submit']:hover {
-    background-color: #04659d;
+    background-color: #f44336;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
 }
 
 /* Privacy Policy Text */
