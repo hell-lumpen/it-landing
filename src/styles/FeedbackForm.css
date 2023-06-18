@@ -1,0 +1,128 @@
+/* FeedbackForm Container */
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 20px; /* Увеличение размера шрифта */
+}
+
+.feedback-form .input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.contact-type-selector {
+    margin-right: 10px;
+    font-family: inherit;
+}
+
+/* Form Input */
+.feedback-form input[type='text'],
+.feedback-form textarea,
+.feedback-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 20px; /* Увеличение размера шрифта */
+}
+
+.feedback-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Error Message */
+.feedback-form .error-message {
+    color: #f63b3b;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Success Message */
+.feedback-form .success-message {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+/* Submit Button */
+.feedback-form button[type='submit'] {
+    background-color: #0081ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.feedback-form button[type='submit']:hover {
+    background-color: #04659d;
+}
+
+/* Privacy Policy Text */
+.feedback-form p {
+    margin-top: 10px;
+    color: #bbbbbb;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Styles for div containing input for fullName */
+.feedback-form .full-name-input {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.feedback-form .full-name-input input {
+    padding: 10px;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.feedback-form .full-name-error-message {
+    color: #f63b3b;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    text-align: center;
+}
+
+/* Styles for div containing textarea for question */
+.feedback-form .question-input {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.feedback-form .question-input textarea {
+    padding: 10px;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+.feedback-form .question-error-message {
+    color: #f63b3b;
+    font-size: 14px;
+    margin-bottom: 4px;
+    margin-top: 2px;
+    text-align: center;
+}

@@ -3,11 +3,15 @@ import './App.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import FeedbackForm from "./components/FeedbackForm";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
   const mainRef = useRef(null);
   const backgroundImageRef = useRef(null);
+
+  const [submitError, setSubmitError] = useState('');
+
 
   useEffect(() => {
     const headerElement = document.querySelector('header');
@@ -82,6 +86,8 @@ function App() {
           <section className="content-section"  id="contacts">
             <h2>Контакты</h2>
             <p>Свяжитесь с нами, чтобы получить дополнительную информацию о нас и наших продуктах. Мы всегда готовы ответить на ваши вопросы и обсудить возможности сотрудничества. Вы можете связаться с нами по телефону, электронной почте или заполнив форму обратной связи на нашем веб-сайте. Мы ждем вашего сообщения!</p>
+            {submitError && <div className="error-message">{submitError}</div>}
+            <FeedbackForm setSubmitError={setSubmitError} />
           </section>
         </main>
 
