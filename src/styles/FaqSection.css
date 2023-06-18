@@ -1,0 +1,35 @@
+.faq-section {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    background-color: #111224;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #636583;
+}
+
+.faq-question.active {
+    background-color: #636583;
+}
+
+.faq-answer {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    background-color: #111224;
+    border-radius: 4px;
+}
