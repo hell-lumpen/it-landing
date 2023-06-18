@@ -74,6 +74,11 @@ function App() {
     { title: 'Поддержка 🤝', description: 'Комьюнити выпускников и партнеров: наставничество и менторство, нетворкинг и участие в жизни университета.' },
   ];
 
+  const highlightsBachelor = [
+    { title: '01.03.00 Компьютерные науки и прикладная математика', description: 'Откройте двери в захватывающий мир компьютерных наук и прикладной математики, где вы сможете раскрыть свой потенциал в области IT, освоить передовые технологии и создавать инновационные решения, приводящие к прогрессу и изменению мира вокруг вас.', link: '/bachelors/cs' },
+    { title: '02.03.02 Фундаментальная информатика и информационные технологии', description: 'Изучайте мир информационных технологий, где ваши IT-компетенции и творческий потенциал объединяются, чтобы создавать инновационные решения и достигать успеха в сфере IT.', link: '/bachelors/fi' }
+  ]
+
 
   return (
       <div className="App">
@@ -98,17 +103,21 @@ function App() {
 
           <section className="content-section">
             <h2>Направления института</h2>
-            <p>Мы являемся ведущей компанией в своей отрасли и предлагаем инновационные решения для клиентов по всему миру.</p>
+            <Highlights data={highlightsBachelor}/>
           </section>
 
           <section className="content-section">
             <h2>Стек технологий выпускника</h2>
-            <p>Мы являемся ведущей компанией в своей отрасли и предлагаем инновационные решения для клиентов по всему миру.</p>
+            <p>
+              Vivamus at pretium elit. Mauris ac rhoncus ipsum. Ut non justo justo. Phasellus posuere consectetur gravida. Suspendisse vestibulum dignissim iaculis. Aenean hendrerit, odio non ornare fermentum, est enim consectetur nulla, ac ullamcorper nisi velit quis tellus. Aliquam in dui risus. Sed rutrum consequat sapien id euismod. Quisque semper finibus sem non hendrerit. Suspendisse potenti. Integer at felis nec metus imperdiet auctor sed non nisl.
+            </p>
           </section>
 
           <section className="content-section">
             <h2>Наши партнеры</h2>
-            <p>Мы предлагаем широкий ассортимент продуктов, отвечающих потребностям наших клиентов.</p>
+            <p>
+              Donec accumsan finibus faucibus. Etiam varius interdum mi, a facilisis sapien faucibus ac. Quisque a metus ex. Pellentesque et condimentum neque, et elementum tellus. Proin egestas augue nec congue posuere. Nam bibendum sodales porta. Vivamus congue, lacus vitae efficitur scelerisque, nibh nunc egestas diam, id lacinia purus sem eu lectus. Donec suscipit, leo id pretium porttitor, urna lorem dapibus ligula, sit amet rhoncus ante turpis eu elit. Morbi rhoncus nunc lorem, at scelerisque turpis luctus eu.
+            </p>
           </section>
 
           <section className="content-section">

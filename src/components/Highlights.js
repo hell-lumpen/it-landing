@@ -13,10 +13,21 @@ const Highlights = ({ data }) => {
 
   const tileCount = getTileCount();
 
+  const handleHighlightClick = (link) => {
+    if (link) {
+      window.location.href = link;
+    }
+  };
+
   return (
       <div className="highlights-container">
-        {data.map(({ title, description }, index) => (
-            <div key={index} className={`highlight ${tileCount === 1 ? 'single' : 'double'}`}>
+        {data.map(({ title, description, link }, index) => (
+            <div
+                key={index}
+                className={`highlight ${tileCount === 1 ? 'single' : 'double'}`}
+                onClick={() => handleHighlightClick(link)}
+                style={link ? { cursor: 'pointer' } : null}
+            >
               <div className="highlight-content">
                 <h2 className="highlight-title">{title}</h2>
                 <p className="highlight-description">{description}</p>
