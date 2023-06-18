@@ -4,7 +4,7 @@
     margin: 0 auto;
     padding-top: 20px;
     font-family: Montserrat, sans-serif;
-    font-size: 20px; /* Увеличение размера шрифта */
+    font-size: 18px; /* Увеличение размера шрифта */
 }
 
 .feedback-form .input-group {
@@ -67,7 +67,7 @@
     display: block;
     cursor: pointer;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
