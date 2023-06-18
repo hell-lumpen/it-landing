@@ -86,9 +86,9 @@ nav a {
   text-decoration: none;
 }
 
-/*main {*/
-/*  margin-top: 0;*/
-/*}*/
+main {
+  padding: 0;
+}
 
 section {
   margin-bottom: 40px;
