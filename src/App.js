@@ -14,7 +14,6 @@ function App() {
 
   const [submitError, setSubmitError] = useState('');
 
-
   useEffect(() => {
     const headerElement = document.querySelector('header');
     const headerHeight = headerElement.offsetHeight;
@@ -77,8 +76,7 @@ function App() {
   const highlightsBachelor = [
     { title: '01.03.00 Компьютерные науки и прикладная математика', description: 'Откройте двери в захватывающий мир компьютерных наук и прикладной математики, где вы сможете раскрыть свой потенциал в области IT, освоить передовые технологии и создавать инновационные решения, приводящие к прогрессу и изменению мира вокруг вас.', link: '/bachelors/cs' },
     { title: '02.03.02 Фундаментальная информатика и информационные технологии', description: 'Изучайте мир информационных технологий, где ваши IT-компетенции и творческий потенциал объединяются, чтобы создавать инновационные решения и достигать успеха в сфере IT.', link: '/bachelors/fi' }
-  ]
-
+  ];
 
   return (
       <div className="App">

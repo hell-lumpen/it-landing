@@ -32,6 +32,23 @@
     font-family: Montserrat, sans-serif;
     color: black;
     font-size: 20px; /* Увеличение размера шрифта */
+    position: relative;
+}
+
+.feedback-form select {
+    appearance: none; /* Отключение стандартного вида селектора */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: white;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%231e1e1e"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 20px;
+    padding-right: 20px; /* Увеличьте значение, если изображение стрелки должно быть дальше от текста */
+}
+
+.feedback-form select:focus {
+    border-color: #f44336; /* Изменение цвета рамки при фокусе */
 }
 
 .feedback-form textarea {
