@@ -6,7 +6,7 @@ import telegram from '../static/img/telegram.png';
 function Footer() {
   return (
       <footer>
-        <p>© {new Date().getFullYear()} IT-центр МАИ. Все права защищены.</p>
+        <p>© {new Date().getFullYear()} Московский авиационный институт. Все права защищены.</p>
         <div className="social-media-icons" style={socialMediaIconsStyles}>
           <a href="https://vk.com/itmai" style={iconLinkStyles} target="_blank" rel="noopener noreferrer">
             <img src={vk} alt="VK" height={30} width={30} style={iconStyles} />

@@ -42,7 +42,7 @@ main {
     padding: 0;
     display: flex;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
     /*background-color: rgba(30, 30, 30, 1); !* Непрозрачный цвет фона меню *!*/
 }
 
@@ -83,7 +83,6 @@ main {
     top: 100%;
     left: 0;
     width: 100%; /* Занимает всю ширину экрана */
-    background-color: rgba(30, 30, 30, 1); /* Непрозрачный цвет фона меню */
     padding: 10px;
     transform: translateY(-100%); /* Полностью скрывает меню */
     opacity: 0;
@@ -130,6 +129,7 @@ main {
         opacity: 1;
         visibility: visible;
         transition: transform 0.3s ease, opacity 0.3s ease, visibility 0s linear;
+        background-color: rgba(30, 30, 30, 1); /* Непрозрачный цвет фона меню */
     }
 
     .menu a:hover {
