@@ -46,7 +46,7 @@ function MainPage() {
 
   const faqs = [
     {
-      question: 'Каков смысл жизни?',
+      question: 'Какие программы обучения предлагает Институт №8?',
       answer: 'Смысл жизни — это индивидуальный и субъективный вопрос, который каждый человек определяет самостоятельно. Для некоторых смысл жизни заключается в достижении счастья, для других — в поиске знания и истины, а для третьих — в служении другим людям.',
     },
     {
@@ -148,7 +148,7 @@ function MainPage() {
             </div>
           </section>
 
-          <section className="content-section" id="benefits">
+          <section className="content-section">
             <div className={"content"}>
               <h2>Преимущества обучения</h2>
               <Highlights data={highlightsData}/>
