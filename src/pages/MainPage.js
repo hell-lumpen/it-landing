@@ -164,7 +164,7 @@ function MainPage() {
 
           <section className="content-section">
             <div className={"content"}>
-              <h2>Стек технологий выпускника</h2>
+              <h2>IT-компетенции выпускника</h2>
               <div>
                 {technologies.map((techCategory, index) => (
                     <div key={index}>
