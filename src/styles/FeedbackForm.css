@@ -48,7 +48,7 @@
 }
 
 .feedback-form select:focus {
-    border-color: #f44336; /* Изменение цвета рамки при фокусе */
+    border-color: #007ACD; /* Изменение цвета рамки при фокусе */
 }
 
 .feedback-form textarea {
@@ -74,7 +74,7 @@
 
 /* Submit Button */
 .feedback-form button[type='submit'] {
-    background-color: #636583;
+    background-color: #007ACD;
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -91,7 +91,7 @@
 }
 
 .feedback-form button[type='submit']:hover {
-    background-color: #f44336;
+    background-color: #076098;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
 }

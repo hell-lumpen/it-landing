@@ -14,7 +14,7 @@
     font-weight: bold;
     font-size: 18px;
     color: #fff;
-    background-color: #111224;
+    background-color: #414141;
     padding: 10px;
     border-radius: 4px;
     transition: background-color 0.3s ease;
@@ -34,6 +34,6 @@
     font-size: 16px;
     color: #fff;
     padding: 10px;
-    background-color: #111224;
+    background-color: #1E1E1E;
     border-radius: 4px;
 }

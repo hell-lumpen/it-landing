@@ -128,21 +128,7 @@ function MainPage() {
     dots: false,
     autoplay: true,
     autoplaySpeed: 2000,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
+    slidesToShow: 3
   };
 
   return (

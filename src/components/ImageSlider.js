@@ -11,8 +11,10 @@ const ImageSlider = ({ items, sliderOptions }) => {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 768) {
+      if (window.innerWidth >= 1250) {
         setSlidesToShow(3);
+      } else if (window.innerWidth>= 850) {
+        setSlidesToShow(2)
       } else {
         setSlidesToShow(1);
       }
@@ -38,7 +40,7 @@ const ImageSlider = ({ items, sliderOptions }) => {
 
 
   return (
-      <div className="slider-container">
+      <div className="slick-track">
         <div className="slider-wrapper">
           <Slider {...settings}>
             {items.map((item, index) => (

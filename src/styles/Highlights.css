@@ -10,7 +10,7 @@
     width: 310px;
     margin-right: 20px;
     margin-bottom: 20px;
-    background-color: #000;
+    background-color: #414141;
     border-radius: 8px;
     transition: background-color 0.3s;
     position: relative;
@@ -43,7 +43,7 @@
 }
 
 .highlight-link:hover {
-    color: #f44336;
+    color: #007ACD;
 }
 
 .highlight:hover {
