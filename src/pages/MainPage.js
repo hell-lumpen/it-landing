@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import FeedbackForm from "../components/FeedbackForm";
 import FaqSection from "../components/FaqSection";
 import Highlights from "../components/Highlights";
+import ImageSlider from "../components/ImageSlider";
 
 function MainPage() {
   const [logoLoaded, setLogoLoaded] = useState(false);
@@ -114,6 +115,22 @@ function MainPage() {
     },
   ];
 
+  const images = [
+    'https://i.imgur.com/jGVBT1p.jpeg',
+    'https://i.imgur.com/lUXcWyf.jpeg',
+    'https://i.imgur.com/9XxPAjG.png',
+    'https://i.imgur.com/jGVBT1p.jpeg',
+    'https://i.imgur.com/lUXcWyf.jpeg',
+    'https://i.imgur.com/9XxPAjG.png'
+  ];
+
+  const sliderOptions = {
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 3
+  };
+
   return (
       <div className="App">
         <Header logoLoaded={logoLoaded} setLogoLoaded={setHeaderHeight} ref={headerRef} /> {/* Передача headerRef в Header */}
@@ -150,6 +167,12 @@ function MainPage() {
 
           <section className="content-section">
             <div className={"content"}>
+              <ImageSlider items={images.map(image => ({ image }))} sliderOptions={sliderOptions} />
+            </div>
+          </section>
+
+          <section className="content-section">
+            <div className={"content"}>
               <h2>Преимущества обучения</h2>
               <Highlights data={highlightsData}/>
             </div>
@@ -164,7 +187,7 @@ function MainPage() {
 
           <section className="content-section">
             <div className={"content"}>
-              <h2>IT-компетенции выпускника</h2>
+              <h2>Стек технологий выпускника</h2>
               <div>
                 {technologies.map((techCategory, index) => (
                     <div key={index}>
