@@ -172,8 +172,14 @@ footer a:hover {
 
 .content-section {
   text-align: left;
+  margin-top: 20px;
   margin-bottom: 20px;
   scroll-margin-top: 120px;
+}
+
+.content-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .content-section h2 {

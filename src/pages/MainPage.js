@@ -83,6 +83,37 @@ function MainPage() {
     { title: '02.03.02 Фундаментальная информатика и информационные технологии', description: 'Изучайте мир информационных технологий, где ваши IT-компетенции и творческий потенциал объединяются, чтобы создавать инновационные решения и достигать успеха в сфере IT.', link: '/bachelors/fi' }
   ];
 
+  const technologies = [
+    {
+      category: 'Языки программирования',
+      items: ['Python', 'Java', 'C/C++', 'C#'],
+    },
+    {
+      category: 'Фреймворки и библиотеки',
+      items: ['Django', 'Flask (Python)', 'Spring (Java)', 'React', "Qt"],
+    },
+    {
+      category: 'Базы данных',
+      items: ['PostgreSQL', 'MongoDB', 'Redis'],
+    },
+    {
+      category: 'Операционные системы',
+      items: ['Windows', 'Linux'],
+    },
+    {
+      category: 'Системы контроля версий',
+      items: ['Git'],
+    },
+    {
+      category: 'Сетевые протоколы и технологии',
+      items: ['TCP/IP', 'DNS', 'HTTP/HTTPS', 'сетевая безопасность'],
+    },
+    {
+      category: 'Методологии разработки',
+      items: ['Agile', 'Scrum'],
+    },
+  ];
+
   return (
       <div className="App">
         <Header logoLoaded={logoLoaded} setLogoLoaded={setHeaderHeight} ref={headerRef} /> {/* Передача headerRef в Header */}
@@ -100,39 +131,60 @@ function MainPage() {
             </div>
           </div>
           <section className="content-section" id="benefits">
-            <h2>Преимущества обучения</h2>
-            <Highlights data={highlightsData}/>
+            <div className={"content"}>
+              <h2>Преимущества обучения</h2>
+              <Highlights data={highlightsData}/>
+            </div>
           </section>
 
           <section className="content-section">
-            <h2>Направления института</h2>
-            <Highlights data={highlightsBachelor}/>
+            <div className={"content"}>
+              <h2>Направления института</h2>
+              <Highlights data={highlightsBachelor}/>
+            </div>
           </section>
 
           <section className="content-section">
-            <h2>Стек технологий выпускника</h2>
-            <p>
-              Vivamus at pretium elit. Mauris ac rhoncus ipsum. Ut non justo justo. Phasellus posuere consectetur gravida. Suspendisse vestibulum dignissim iaculis. Aenean hendrerit, odio non ornare fermentum, est enim consectetur nulla, ac ullamcorper nisi velit quis tellus. Aliquam in dui risus. Sed rutrum consequat sapien id euismod. Quisque semper finibus sem non hendrerit. Suspendisse potenti. Integer at felis nec metus imperdiet auctor sed non nisl.
-            </p>
+            <div className={"content"}>
+              <h2>Стек технологий выпускника</h2>
+              <div>
+                {technologies.map((techCategory, index) => (
+                    <div key={index}>
+                      <h3>{techCategory.category}</h3>
+                      <ul>
+                        {techCategory.items.map((item, index) => (
+                            <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    </div>
+                ))}
+              </div>
+            </div>
           </section>
 
           <section className="content-section">
-            <h2>Наши партнеры</h2>
-            <p>
-              Donec accumsan finibus faucibus. Etiam varius interdum mi, a facilisis sapien faucibus ac. Quisque a metus ex. Pellentesque et condimentum neque, et elementum tellus. Proin egestas augue nec congue posuere. Nam bibendum sodales porta. Vivamus congue, lacus vitae efficitur scelerisque, nibh nunc egestas diam, id lacinia purus sem eu lectus. Donec suscipit, leo id pretium porttitor, urna lorem dapibus ligula, sit amet rhoncus ante turpis eu elit. Morbi rhoncus nunc lorem, at scelerisque turpis luctus eu.
-            </p>
+            <div className={"content"}>
+              <h2>Наши партнеры</h2>
+              <p>
+                Donec accumsan finibus faucibus. Etiam varius interdum mi, a facilisis sapien faucibus ac. Quisque a metus ex. Pellentesque et condimentum neque, et elementum tellus. Proin egestas augue nec congue posuere. Nam bibendum sodales porta. Vivamus congue, lacus vitae efficitur scelerisque, nibh nunc egestas diam, id lacinia purus sem eu lectus. Donec suscipit, leo id pretium porttitor, urna lorem dapibus ligula, sit amet rhoncus ante turpis eu elit. Morbi rhoncus nunc lorem, at scelerisque turpis luctus eu.
+              </p>
+            </div>
           </section>
 
           <section className="content-section">
-            <h2>Частые вопросы</h2>
-            <FaqSection faqs={faqs} />
+            <div className={"content"}>
+              <h2>Частые вопросы</h2>
+              <FaqSection faqs={faqs} />
+            </div>
           </section>
 
           <section className="content-section"  id="contacts">
-            <h2>Контакты</h2>
-            <p>Свяжитесь с нами, чтобы получить дополнительную информацию о нас и наших продуктах. Мы всегда готовы ответить на ваши вопросы и обсудить возможности сотрудничества. Вы можете связаться с нами по телефону, электронной почте или заполнив форму обратной связи на нашем веб-сайте. Мы ждем вашего сообщения!</p>
-            {submitError && <div className="error-message">{submitError}</div>}
-            <FeedbackForm setSubmitError={setSubmitError} />
+            <div className={"content"}>
+              <h2>Контакты</h2>
+              <p>Свяжитесь с нами, чтобы получить дополнительную информацию о нас и наших продуктах. Мы всегда готовы ответить на ваши вопросы и обсудить возможности сотрудничества. Вы можете связаться с нами по телефону, электронной почте или заполнив форму обратной связи на нашем веб-сайте. Мы ждем вашего сообщения!</p>
+              {submitError && <div className="error-message">{submitError}</div>}
+              <FeedbackForm setSubmitError={setSubmitError} />
+            </div>
           </section>
         </main>
 
