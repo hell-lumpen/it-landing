@@ -1,5 +1,5 @@
 {
-  "short_name": "IT МАИ",
+  "short_name": "IT в МАИ",
   "name": "Институт №8 МАИ",
   "icons": [
     {
@@ -8,14 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo8inst.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "176x192"
     },
     {
       "src": "logo512.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "472x512"
     }
   ],
   "start_url": ".",
