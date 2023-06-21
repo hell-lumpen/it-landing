@@ -1,8 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import '../styles/Header.css';
 import logo from '../static/img/logo.png';
+import { Link } from 'react-router-dom';
 
-function Header() {
+function Header({ logoLoaded, setLogoLoaded }, ref) {
+  const handleLogoLoad = () => {
+    setLogoLoaded(true);
+  };
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,10 +31,10 @@ function Header() {
   };
 
   return (
-      <header className={isScrolled ? 'scrolled' : ''}>
+      <header ref={ref} className={`${isScrolled ? 'scrolled' : ''} ${logoLoaded ? 'logo-loaded' : ''}`}>
         <nav>
           <div className="logo">
-            <img src={logo} alt="IT-центр МАИ логотип" />
+            <img src={logo} alt="IT-центр МАИ логотип" onLoad={handleLogoLoad} />
           </div>
           <div className={`menu-icon ${isMenuOpen ? 'open' : ''}`} onClick={handleMenuToggle}>
             <div className="icon-bar"></div>
@@ -37,13 +42,19 @@ function Header() {
             <div className="icon-bar"></div>
           </div>
           <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-            <li><a href="/">Главная</a></li>
-            <li><a href="/bachelors/cs">Компьютерные науки</a></li>
-            <li><a href="/bachelors/fi">Фундаментальная информатика</a></li>
+            <li>
+              <Link to="/">Главная</Link>
+            </li>
+            <li>
+              <Link to="/bachelors/cs">Компьютерные науки</Link>
+            </li>
+            <li>
+              <Link to="/bachelors/fi">Фундаментальная информатика</Link>
+            </li>
           </ul>
         </nav>
       </header>
   );
 }
 
-export default Header;
+export default React.forwardRef(Header);
