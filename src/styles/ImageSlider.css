@@ -1,0 +1,37 @@
+.slider-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.slider-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider-item {
+    text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.slider-item img {
+    max-width: 310px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.slider-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.slider-item p {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.slick-slide {
+    max-width: 100%;
+}
