@@ -14,6 +14,10 @@ const App = () => {
           <Route exact path="/" component={MainPage} />
           <Route path="/bachelors/cs" component={BachelorCSPage} />
           <Route path="/bachelors/fi" component={BachelorFIPage} />
+          <Route path="/admission/application" component={() => {
+            window.location.href = 'https://lk.mai.ru';
+            return null;
+          }} />
           <Route component={NotFoundPage} />
         </Switch>
       </BrowserRouter>
